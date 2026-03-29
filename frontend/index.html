@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-2">Student Management System</h1>
+        <div class="form-container">
+            <h2 class="text-center">Admin Login</h2>
+            <form id="loginForm">
+                <div class="form-group mt-1">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div id="loginError" class="error-msg"></div>
+            </form>
+            <p class="text-center mt-1" style="font-size: 0.8rem; color: #666;">Hint: username: admin, password: admin</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

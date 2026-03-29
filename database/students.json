@@ -1,0 +1,26 @@
+[
+  {
+    "id": "101",
+    "name": "Alice Smith",
+    "course": "Computer Science",
+    "email": "alice@example.com"
+  },
+  {
+    "id": "102",
+    "name": "Bob Johnson",
+    "course": "Mathematics",
+    "email": "bob@example.com"
+  },
+  {
+    "id": "103",
+    "name": "Charlie Brown",
+    "course": "Physics",
+    "email": "charlie@example.com"
+  },
+  {
+    "id": "23EG105B43",
+    "name": "N.SATHWICK REDDY",
+    "course": "Computer Science and Engineering",
+    "email": "23eg105b43@xyz.eddu.in"
+  }
+]

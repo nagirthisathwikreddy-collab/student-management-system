@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student - Student Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Student Manager</h1>
+        <div class="nav-links">
+            <a href="dashboard.html">Home</a>
+            <a href="add-student.html">Add Student</a>
+            <a href="view-students.html">View Students</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h2 class="text-center">Edit Student</h2>
+            <form id="editStudentForm" class="mt-1">
+                <div class="form-group">
+                    <label for="editStudentId">Student ID (Cannot be changed)</label>
+                    <input type="text" id="editStudentId" readonly style="background-color: #eee;">
+                </div>
+                <div class="form-group">
+                    <label for="editName">Full Name</label>
+                    <input type="text" id="editName" required>
+                </div>
+                <div class="form-group">
+                    <label for="editCourse">Course</label>
+                    <select id="editCourse" required>
+                        <option value="">Select a course</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Engineering">Engineering</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="editEmail">Email Address</label>
+                    <input type="email" id="editEmail" required>
+                </div>
+                <button type="submit" class="btn">Update Student</button>
+                <div id="editError" class="error-msg"></div>
+            </form>
+            <div class="text-center mt-1">
+                <a href="view-students.html" style="color: #666; text-decoration: none;">Cancel</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

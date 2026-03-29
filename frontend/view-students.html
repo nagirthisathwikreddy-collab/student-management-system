@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Students - Student Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Student Manager</h1>
+        <div class="nav-links">
+            <a href="dashboard.html">Home</a>
+            <a href="add-student.html">Add Student</a>
+            <a href="view-students.html">View Students</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Student Records</h2>
+        <div class="mt-1" style="display: flex; justify-content: space-between; align-items: center;">
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search by name or ID...">
+            <button id="refreshBtn" class="btn btn-small" style="margin-bottom: 1rem;">Refresh List</button>
+        </div>
+        
+        <div class="table-container">
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsBody">
+                    <!-- Data will be populated here by main.js -->
+                </tbody>
+            </table>
+            <p id="noDataMsg" class="text-center mt-1" style="display: none;">No student records found.</p>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script>
+        // Specific init for view page
+        document.addEventListener('DOMContentLoaded', () => {
+            if(typeof loadStudents === 'function') loadStudents();
+        });
+    </script>
+</body>
+</html>
